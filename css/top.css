@@ -1,0 +1,305 @@
+@charset "UTF-8";
+h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+/* サイトタイトル　メインビジュアル */
+.site_title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(../images/top_img/Mv.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: var(--text-bright-color);
+}
+.site_title h2 {
+    font-size: 15vw;
+    letter-spacing: 0.2em;
+    margin-left: 0.2em;
+}
+.site_title p {
+    font-size: 18px;
+}
+@media (min-width: 768px){
+  .site_title h2 {
+    font-size: 115px;
+  }
+  .site_title p {
+    font-size: 24px;
+  }
+}
+/* ファーストコンテンツ */
+.first .text_box {
+    margin-right: 1%;
+}
+.first h3 {
+    margin-top: 94px;
+    margin-bottom: 104px;
+}
+
+    /* mini ボタン設定 */
+.first .mini_btn {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    background: var(--main-color);
+    padding: 8px 124px;
+    border-radius: 2px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition: .3s;
+  }
+  .first .mini_btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 2px solid var(--main-color);
+    border-radius: 2px;
+    box-sizing: border-box;
+    z-index: -1;
+    transform: scale(1.2);
+    opacity: 0;
+    transition: transform ease .3s, opacity .3s;
+  }
+  .first .mini_btn:hover {
+    color: var(--main-color);
+    background: transparent;
+  }
+  .first .mini_btn:hover::before {
+    transform: scale(1);
+    opacity: 1;
+  }
+/* コンテンツタイトル */
+h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 64px;
+    text-align: center;
+    color: var(--text-bright-color);
+    display: inline-block;
+}
+
+  /* サービス */
+.service .container {
+    position: relative;
+    height: 280px;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(../images/top_img/\ service.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* サービス　コンテンツ */
+.service .frame {
+    width: 300px;
+}
+.service .frame img {
+    width: 300px;
+    height: 300px;
+}
+.service h5 {
+    text-align: center;
+    font-size: 24px;
+}
+.service p {
+    font-size: 16px;
+}
+
+/* ワークス */
+.works .container {
+    position: relative;
+    height: 280px;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(../images/top_img/works.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* ワークス　コンテンツ */
+.works .flex {
+    flex-wrap: wrap;
+}
+.works .frame {
+    width: 472px;
+    height: 416px;
+
+}
+.works .text_area {
+   width: 100%; 
+}
+.works .frame img {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 24px;
+}
+.works h5 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.works p {
+    font-size: 16px;
+}
+/* 問い合わせ　ボタン */
+.btn_box {
+    text-align: center;
+    margin-top: 100px;
+}
+a.btn-flat {
+    overflow: hidden;
+    color: #fff;
+    border-radius: 0;
+    background: #000;
+    border: 2px solid #000;
+  }
+  
+a.btn-flat span {
+    position: relative;
+  }
+  
+a.btn-flat:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    background: var(--main-color);
+  }
+a.btn-flat:hover:before {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+/* コンタクト */
+.contact .container {
+    position: relative;
+    height: 280px;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(../images/top_img/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.contact .contact_banner_box {
+    text-align: center;
+}
+.contact .contact_banner_box a {
+    color: var(--text-dark-color);
+}
+.contact .contact_banner_box h5 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.contact .wide_banner {
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    margin-top: 32px;
+}
+.contact .banner_01 {
+    background-image: url(../images/top_img/contact_02.jpg);
+}
+.contact .banner_02 {
+    background-image: url(../images/top_img/recruit.jpg);
+}
+
+
+/* ニュース */
+.news_list div {
+    margin-left: 64px;
+}
+.news .container {
+    position: relative;
+    height: 280px;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(../images/top_img/news.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.news_column {
+    line-height: 140px;
+    justify-content: center;
+    color: var(--text-dark-color);
+}
+.news_column:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--text-bright-color);
+}
+/* アバウト */
+.about {
+    background-color: var(--accent-color);
+}
+.about .container {
+    position: relative;
+    height: 280px;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(../images/top_img/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about_text_box {
+    background-color: #fff;
+    width: 472px;
+    height: 544px;
+}
+.about_text_box dl {
+    line-height: 2;
+    margin-left: 16px;
+    margin-top: 8px;
+}
+.about_text_box dt {
+    color: #333;
+    font-size: 14px;
+}
+.about_text_box dd {
+    font-size: 16px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+.about_bg {
+    width: 80%;
+    height: 80vh;
+    background-color: var(--accent-color);
+    z-index: -100;
+}
+/* 代表挨拶 */
+.greetings {
+    background-image: url(../images/top_img/office_01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 160px;
+}
+.bg_glay {
+    color: var(--text-bright-color);
+    vertical-align: middle;
+    background-color: rgba(0,0,0,0.5);
+}
+.bg_glay h5 {
+    font-size: 28px;
+    padding-left: 24px;
+    padding-top: 16px;
+}
+.bg_glay p {
+    font-size: 16px;
+    padding-left: 24px;
+    padding-top: 16px;
+    line-height: 1.5em;
+}
